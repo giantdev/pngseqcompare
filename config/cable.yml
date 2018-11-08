@@ -6,5 +6,4 @@ test:
 
 production:
   adapter: redis
-  url: redis://localhost:6379/1
-  channel_prefix: pngseqcompare_production
+  url: redis://redistogo:c80e1b321193623229d06c4294dc0a8d@spinyfin.redistogo.com:11165/
