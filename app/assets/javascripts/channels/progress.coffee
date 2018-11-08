@@ -21,8 +21,8 @@ $(document).on "turbolinks:load", =>
         $('.progress').show()
         $('.result').show()
       else if data.status == 'in progress'
-        $('.result p').text(val + '% completed. ' + data.iden + ' identical images are found so far.')
+        $('.result p').text(val + '% completed. Found ' + data.iden + ' identical images so far.')
         $('.progress-bar').css('width', val+'%')
         $('.progress-bar').attr('aria-valuenow', val)
       else
-        $('.result p').text('100% completed. ' + data.iden + ' identical images are found in previous sequence. Current sequence has ' + (data.total - data.iden) + ' unqiue images.')
+        $('.result p').text('100% completed. Found ' + data.iden + ' identical images in previous sequence. Current sequence has ' + (data.total - data.iden) + ' unqiue images.')
