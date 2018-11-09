@@ -90,7 +90,7 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # For Action Cable
-  config.action_cable.url = 'wss://pngseqcompare.herokuapp.com/cable'
+  config.action_cable.url = 'wss://68.183.68.131/cable'
   config.action_cable.allowed_request_origins = [
-    'https://pngseqcompare.herokuapp.com' ]
+    'http://68.183.68.131' ]
 end
